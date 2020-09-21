@@ -56,10 +56,10 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch, props) => {
     return {
-        fetchAllProducts : () => {
+        fetchAllProducts: () => {
             dispatch(actFetchProductsRequest());
         },
-        onDeleteProduct : (id) => {
+        onDeleteProduct: (id) => {
             dispatch(actDeleteProductRequest(id));
         }
     }

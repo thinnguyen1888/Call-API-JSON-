@@ -11,14 +11,14 @@ export const actFetchProductsRequest = () => {
 
 export const actFetchProducts = (products) => {
     return {
-        type : Types.FETCH_PRODUCTS,
+        type: Types.FETCH_PRODUCTS,
         products
     }
 }
 
 export const actDeleteProductRequest = (id) => {
     return dispatch => {
-        return callApi(`products/${id}`, 'DELETE', null).then(res =>{
+        return callApi(`products/${id}`, 'DELETE', null).then(res => {
             dispatch(actDeleteProduct(id));
         })
     }
@@ -26,7 +26,7 @@ export const actDeleteProductRequest = (id) => {
 
 export const actDeleteProduct = (id) => {
     return {
-        type : Types.DELETE_PRODUCT,
+        type: Types.DELETE_PRODUCT,
         id
     }
 }
@@ -41,7 +41,7 @@ export const actAddProductRequest = (product) => {
 
 export const actAddProduct = (product) => {
     return {
-        type : Types.ADD_PRODUCT,
+        type: Types.ADD_PRODUCT,
         product
     }
 }
@@ -56,7 +56,7 @@ export const actGetProductRequest = (id) => {
 
 export const actGetProduct = (product) => {
     return {
-        type : Types.EDIT_PRODUCT,
+        type: Types.EDIT_PRODUCT,
         product
     }
 }
@@ -71,7 +71,7 @@ export const actUpdateProductRequest = (product) => {
 
 export const actUpdateProduct = (product) => {
     return {
-        type : Types.UPDATE_PRODUCT,
+        type: Types.UPDATE_PRODUCT,
         product
     }
 }
